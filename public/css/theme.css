@@ -3220,8 +3220,14 @@ ul, ol {
     position: fixed;
     top: 48px;
     right: auto;
-    left: min(calc(100vw - 60px), 330px);
+    left: 330px;
     z-index: 90;
+  }
+}
+
+@media (max-width: 389px) {
+  .mobile-menu-btn {
+    left: calc(100vw - 60px);
   }
 }
 
@@ -3308,7 +3314,7 @@ ul, ol {
     position: fixed;
     top: 48px;
     right: auto;
-    left: min(calc(100vw - 60px), 330px);
+    left: 330px;
     z-index: 90;
   }
 
