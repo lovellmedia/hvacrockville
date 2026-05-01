@@ -3,301 +3,60 @@ import SEOHead from '../../components/SEOHead.astro';
 ---
 <!doctype html>
 <html lang="en">
-<head>
-  <SEOHead title="HVAC and AC Repair: When to Call a Pro — HVAC Rockville" description="Learn the practical signs that it is time to schedule hvac and ac repair service and what information helps the visit go smoothly." />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/theme.css">
-  <script>
-    (function() {
-      const theme = localStorage.getItem('theme-preference');
-      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-      } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-    })();
-  </script>
-</head>
-<body>
-
-  <div class="emergency-strip">
-    <span class="inline-flex items-center gap-2">
-      <span class="relative flex h-2 w-2"><span class="ping-dot"></span></span>
-      Same-Day HVAC & AC Repair in Rockville - Call Now: <a href="tel:2405550148">(240) 555-0148</a>
-    </span>
-  </div>
-
-  <header class="site-header is-transparent js-site-header">
-    <div class="container">
-      <div class="site-header-inner">
-        <a href="/" class="logo">
-          <div class="logo-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2C8.5 2 6 4.5 6 7C6 9.5 8 11 8 11L6 13L9 12C9 12 10 14 12 14C14 14 15 12 15 12L18 13L16 11C16 11 18 9.5 18 7C18 4.5 15.5 2 12 2Z" fill="white"/>
-              <path d="M8 15C8 15 6 17 4 16C4 16 5 18 8 18V15Z" fill="white"/>
-              <path d="M16 15C16 15 18 17 20 16C20 16 19 18 16 18V15Z" fill="white"/>
-            </svg>
-          </div>
-          <div class="logo-text"><span class="logo-brand">HVAC Rockville</span></div>
-        </a>
-        <nav class="desktop-nav">
-          <a href="/" class="nav-link">Home</a>
-          <a href="/services/" class="nav-link">Services</a>
-          <a href="/about/" class="nav-link">About</a>
-          <a href="/" class="nav-link is-active">Blog</a>
-          <a href="/glossary/" class="nav-link">Glossary</a>
-          <a href="/contact/" class="nav-link">Contact</a>
-        </nav>
-        <div class="header-actions">
-          <a href="tel:2405550148" class="header-phone">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span>(240) 555-0148</span>
-          </a>
-          <button class="theme-toggle js-theme-toggle" aria-label="Toggle theme">
-            <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-            <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          </button>
-          <a href="/contact/" class="header-cta">Request HVAC Repair</a>
-          <button class="mobile-menu-btn js-mobile-menu-btn" aria-label="Toggle menu">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="mobile-menu js-mobile-menu">
-      <div class="mobile-menu-inner">
-        <a href="/" class="mobile-menu-link">Home</a>
-        <a href="/services/" class="mobile-menu-link">Services</a>
-        <a href="/about/" class="mobile-menu-link">About</a>
-        <a href="/" class="mobile-menu-link is-active">Blog</a>
-        <a href="/glossary/" class="mobile-menu-link">Glossary</a>
-        <a href="/contact/" class="mobile-menu-link">Contact</a>
-        <div class="mobile-menu-footer">
-          <a href="tel:2405550148" style="color: white; display: flex; align-items: center; gap: 0.5rem;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span>(240) 555-0148</span>
-          </a>
-        </div>
-        <a href="/contact/" class="mobile-menu-cta">Request HVAC Repair</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero hero-45">
-      <div class="hero-bg">
-        <img src="/images/blog-01.png" alt="HVAC and AC Repair: When to Call a Pro" loading="eager">
-        <div class="hero-overlay"></div>
-      </div>
-      <div class="hero-content">
-        <div class="container">
-          <nav class="breadcrumb" aria-label="Breadcrumb">
-            <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
-              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a href="/" class="breadcrumb-link" itemprop="item"><span itemprop="name">Home</span></a>
-                <meta itemprop="position" content="1">
-              </li>
-              <li class="breadcrumb-separator">/</li>
-              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a href="/" class="breadcrumb-link" itemprop="item"><span itemprop="name">Blog</span></a>
-                <meta itemprop="position" content="2">
-              </li>
-              <li class="breadcrumb-separator">/</li>
-              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span class="breadcrumb-current" itemprop="name">Signs</span>
-                <meta itemprop="position" content="3">
-              </li>
-            </ol>
+  <head>
+    <SEOHead title="HVAC Repair: When to Call a Pro | HVAC Rockville" description="Rockville HVAC and AC repair for no-cooling calls, furnace problems, heat pump issues, weak airflow, and urgent comfort system failures." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/theme.css">
+  </head>
+  <body>
+    <div class="emergency-strip">Same-Day HVAC & AC Repair in Rockville - Call Now: <a href="tel:2405550148">(240) 555-0148</a></div>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header-inner">
+          <a href="/" class="logo"><div class="logo-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" fill="white"/></svg></div><div class="logo-text"><span class="logo-brand">HVAC Rockville</span></div></a>
+          <nav class="desktop-nav">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/services/" class="nav-link">Services</a>
+            <a href="/about/" class="nav-link">About</a>
+            <a href="/blog/" class="nav-link">Blog</a>
+            <a href="/glossary/" class="nav-link">Glossary</a>
+            <a href="/contact/" class="nav-link">Contact</a>
           </nav>
-          <span class="blog-hero-category">Signs</span>
-          <h1 class="blog-hero-title">HVAC and AC Repair: When to Call a Pro</h1>
-          <div class="blog-hero-meta">
-            <img src="/images/testimonial-02.png" alt="Rockville Service Team" class="blog-hero-avatar">
-            <span>By Rockville Service Team</span>
-            <span class="blog-hero-meta-separator"></span>
-            <span>Dec 15, 2024</span>
-            <span class="blog-hero-meta-separator"></span>
-            <span>8 min read</span>
-          </div>
+          <div class="header-actions"><a href="tel:2405550148" class="header-phone"><span>(240) 555-0148</span></a><a href="/contact/" class="header-cta">Request HVAC Repair</a></div>
         </div>
       </div>
+    </header>
+    <main>
+    <section class="hero hero-45">
+      <div class="hero-bg"><img src="/images/blog-01.png" alt="HVAC Repair: When to Call a Pro" loading="eager"><div class="hero-overlay"></div></div>
+      <div class="hero-content"><div class="container"><h1 class="hero-headline">HVAC Repair: When to Call a Pro</h1><p class="hero-subheadline">A practical Rockville homeowner guide to timing, symptoms, and the information that helps a service visit go smoothly.</p></div></div>
     </section>
-
     <section class="section section-lg section-bg-light">
-      <div class="container">
-        <div class="sidebar-layout">
-          <div class="content-area">
-            <div class="article-prose js-animate animate-on-scroll">
-              <p class="lead">Learn the practical signs that it is time to schedule hvac and ac repair service and what information helps the visit go smoothly.</p>
-              <h2 id="section-1">1. Unusual Noises in Your Attic</h2>
-              <p>One of the most common signs of comfort emergencies in your home is hearing strange noises, particularly at dusk and dawn. Comfort Emergencies are nocturnal creatures, so you may hear scratching, squeaking, or fluttering sounds coming from your attic, walls, or chimney during these times.</p>
-              <p>These sounds are often mistaken for mice or rats, but comfort emergencies tend to be louder and more active in groups. If you hear persistent noises that seem to move in a pattern, it's worth investigating further.</p>
-              <h2 id="section-2">2. Droppings and Stains</h2>
-              <p>Comfort Emergencies droppings are a clear indicator of an infestation. They typically accumulate in piles near entry points, on attic floors, and in other roosting areas. These droppings can pose serious health risks and should be handled with caution.</p>
-              <p>You may also notice dark stains on your ceilings or walls caused by oils from comfort emergencies' fur rubbing against surfaces as they enter and exit your home.</p>
-              <h2 id="section-3">3. Strong Ammonia-Like Odors</h2>
-              <p>A persistent ammonia smell in your attic or upper floors is a strong sign that comfort emergencies have taken up residence. This odor comes from urine and droppings accumulating over time. The stronger the smell, the larger and more established the colony likely is.</p>
-              <h2 id="section-4">4. Visible Entry Points</h2>
-              <p>Comfort Emergencies can enter through gaps as small as half an inch. Common entry points include loose roof shingles, gaps in fascia boards, uncapped chimneys, and vent openings. You may notice greasy rub marks around these openings from comfort emergencies' fur.</p>
-              <blockquote>"Early detection is key. The sooner you identify a comfort emergency problem, the easier and less expensive it is to resolve." — Rockville Service Team, Lead Technician</blockquote>
-              <h2 id="section-5">5. Seeing comfort emergencies at Dusk</h2>
-              <p>If you see comfort emergencies flying around your home at dusk or dawn, particularly near the roofline, there's a good chance they're using your attic as a roost. Watch for a pattern — comfort emergencies often use the same entry and exit points repeatedly.</p>
-              <h2 id="section-6">What to Do If You Suspect comfort emergencies</h2>
-              <p>If you've noticed one or more of these signs, it's important to act quickly. Comfort Emergencies colonies can grow rapidly, and the longer they remain, the more damage and health risks they pose.</p>
-              <p><strong>Do not attempt to handle comfort emergencies yourself.</strong> Many species are protected by law, and improper removal can result in legal penalties. Additionally, comfort emergencies can carry diseases that pose risks to humans and pets.</p>
-              <p>Contact a licensed professional like HVAC Rockville for a thorough inspection and humane removal plan. We offer free inspections and will provide a detailed assessment of your situation.</p>
-              <hr>
-              <div class="social-share">
-                <span class="social-share-label">Share this article:</span>
-                <a href="#" class="social-share-btn" aria-label="Share on Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-                <a href="#" class="social-share-btn" aria-label="Share on Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
-                <a href="#" class="social-share-btn" aria-label="Share on LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-                <a href="#" class="social-share-btn" aria-label="Copy link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></a>
-              </div>
-            </div>
-            <div class="author-card js-animate animate-on-scroll">
-              <img src="/images/testimonial-02.png" alt="Rockville Service Team" class="author-card-avatar">
-              <div class="author-card-body">
-                <h3 class="author-card-name">Rockville Service Team</h3>
-                <p class="author-card-bio">Lead technician at HVAC Rockville with 10+ years of experience in heating and cooling. Passionate about humane wildlife management and homeowner education.</p>
-                <div class="author-card-social">
-                  <a href="#" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
-                  <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <aside class="sidebar is-sticky">
-            <div class="toc js-toc js-animate animate-on-scroll">
-              <h3 class="toc-title">Table of Contents</h3>
-              <nav class="toc-nav" aria-label="Table of contents">
-                <a href="#section-1" class="toc-link js-toc-link">1. Unusual Noises</a>
-                <a href="#section-2" class="toc-link js-toc-link">2. Droppings and Stains</a>
-                <a href="#section-3" class="toc-link js-toc-link">3. Strong Odors</a>
-                <a href="#section-4" class="toc-link js-toc-link">4. Visible Entry Points</a>
-                <a href="#section-5" class="toc-link js-toc-link">5. Activity at Dusk</a>
-                <a href="#section-6" class="toc-link js-toc-link">6. What to Do</a>
-              </nav>
-            </div>
-            <div class="lead-form js-animate animate-on-scroll" style="margin-top: 1.5rem;">
-              <h3 class="lead-form-heading">Need HVAC Repair?</h3>
-              <p class="lead-form-subheading">Get a free inspection today.</p>
-              <a href="/contact/" class="form-submit" style="display: inline-block; text-align: center; width: 100%;">Request HVAC Repair</a>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-lg section-bg-light">
-      <div class="container">
-        <h2 class="related-posts-title">Related Articles</h2>
-        <div class="blog-grid blog-grid-3">
-          <article class="blog-card js-animate animate-on-scroll">
-            <div class="blog-card-image"><img src="/images/blog-02.png" alt="Prevention Tips" loading="lazy"></div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Dec 10, 2024</div>
-              <h3 class="blog-card-title">How to Prevent comfort emergencies From Entering Your Home</h3>
-              <a href="/blog/post/" class="blog-card-link">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-            </div>
-          </article>
-          <article class="blog-card js-animate animate-on-scroll">
-            <div class="blog-card-image"><img src="/images/blog-03.png" alt="Safety Guide" loading="lazy"></div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Dec 5, 2024</div>
-              <h3 class="blog-card-title">Are comfort emergencies Dangerous? A Complete Safety Guide</h3>
-              <a href="/blog/post/" class="blog-card-link">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-            </div>
-          </article>
-          <article class="blog-card js-animate animate-on-scroll">
-            <div class="blog-card-image"><img src="/images/blog-04.png" alt="Cost Breakdown" loading="lazy"></div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Nov 28, 2024</div>
-              <h3 class="blog-card-title">HVAC Repair Cost Breakdown: What to Expect</h3>
-              <a href="/blog/post/" class="blog-card-link">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-            </div>
-          </article>
-        </div>
+      <div class="container container-prose">
+        <article class="article-prose">
+          <p class="lead">Some service requests can wait for a planned appointment. Others deserve fast attention because delay can create more cost, stress, or disruption.</p>
+          <h2>1. AC Repair</h2><p>Cooling diagnostics for warm air, frozen coils, tripped breakers, failed capacitors, and outdoor unit problems.</p>
+<h2>2. Furnace Repair</h2><p>Heating repair for ignition failures, short cycling, blower problems, and unsafe shutdowns during cold snaps.</p>
+<h2>3. Heat Pump Service</h2><p>Repair support for heat pumps, auxiliary heat problems, reversing valve symptoms, and seasonal performance drops.</p>
+<h2>4. Emergency HVAC</h2><p>Priority response when indoor temperatures are unsafe, equipment is making alarming sounds, or comfort is falling fast.</p>
+          <h2>What To Share When You Call</h2>
+          <p>Share the address, the main symptom, how long it has been happening, photos if helpful, and any access or scheduling constraints. Clear details help route the right next step.</p>
+          <h2>Next Step</h2>
+          <p>Call HVAC Rockville or send the contact form to request hvac repair help in Rockville and nearby Montgomery County communities.</p>
+          <p><a href="/contact/" class="btn-primary">Request HVAC Repair</a></p>
+        </article>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="/" class="logo">
-            <div class="logo-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2C8.5 2 6 4.5 6 7C6 9.5 8 11 8 11L6 13L9 12C9 12 10 14 12 14C14 14 15 12 15 12L18 13L16 11C16 11 18 9.5 18 7C18 4.5 15.5 2 12 2Z" fill="white"/>
-                <path d="M8 15C8 15 6 17 4 16C4 16 5 18 8 18V15Z" fill="white"/>
-                <path d="M16 15C16 15 18 17 20 16C20 16 19 18 16 18V15Z" fill="white"/>
-              </svg>
-            </div>
-            <div class="logo-text"><span class="logo-brand">HVAC Rockville</span></div>
-          </a>
-          <p>HVAC and AC Repair specialists serving Rockville homes with clear communication and practical service options since 2014.</p>
-          <div class="footer-contact">
-            <a href="tel:2405550148"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>(240) 555-0148</span></a>
-            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>199 E Montgomery Ave, Rockville, MD 20850</span></div>
-          </div>
-        </div>
-        <div class="footer-column">
-          <h3>Services</h3>
-          <ul>
-            <li><a href="/services/">AC Repair</a></li>
-            <li><a href="/services/">Furnace Repair</a></li>
-            <li><a href="/services/">Heat Pump Service</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Company</h3>
-          <ul>
-            <li><a href="/about/">About</a></li>
-            <li><a href="/">Blog</a></li>
-            <li><a href="/glossary/">Glossary</a></li>
-            <li><a href="/contact/">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-areas">
-          <h3>Service Areas</h3>
-          <div class="footer-area-tags">
-            <span class="footer-area-tag">Rockville</span>
-            <span class="footer-area-tag">North Bethesda</span>
-            <span class="footer-area-tag">Potomac</span>
-            <span class="footer-area-tag">Gaithersburg</span>
-          </div>
-        </div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom"><div class="footer-legal">2026 HVAC Rockville. All rights reserved.</div></div>
       </div>
-      <div class="footer-bottom">
-        <div class="footer-legal">2026 HVAC Rockville. All rights reserved. Licensed & insured where required.</div>
-        <div class="footer-social">
-          <a href="https://facebook.com/hvacrockville" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-          <a href="https://twitter.com/hvacrockville" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <a href="tel:2405550148" class="fab" aria-label="Call now">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-  </a>
-
-  <div class="cookie-banner js-cookie-banner hidden">
-    <div class="cookie-banner-inner">
-      <p>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</p>
-      <button class="cookie-banner-close js-cookie-close" aria-label="Close">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
-    </div>
-    <button class="cookie-banner-btn js-cookie-accept">Got it</button>
-  </div>
-
-  <script is:inline src="/js/main.js"></script>
-</body>
+    </footer>
+    <script is:inline src="/js/main.js"></script>
+  </body>
 </html>

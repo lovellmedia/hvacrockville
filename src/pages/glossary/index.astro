@@ -3,304 +3,47 @@ import SEOHead from '../../components/SEOHead.astro';
 ---
 <!doctype html>
 <html lang="en">
-<head>
-  <SEOHead title="HVAC and AC Repair Glossary — HVAC Rockville" description="Plain-English terms related to hvac and ac repair service, scheduling, and common home issues." />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/theme.css">
-  <script>
-    (function() {
-      const theme = localStorage.getItem('theme-preference');
-      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-      } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-    })();
-  </script>
-</head>
-<body>
-
-  <div class="emergency-strip">
-    <span class="inline-flex items-center gap-2">
-      <span class="relative flex h-2 w-2"><span class="ping-dot"></span></span>
-      Same-Day HVAC & AC Repair in Rockville - Call Now: <a href="tel:2405550148">(240) 555-0148</a>
-    </span>
-  </div>
-
-  <header class="site-header is-transparent js-site-header">
-    <div class="container">
-      <div class="site-header-inner">
-        <a href="/" class="logo">
-          <div class="logo-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2C8.5 2 6 4.5 6 7C6 9.5 8 11 8 11L6 13L9 12C9 12 10 14 12 14C14 14 15 12 15 12L18 13L16 11C16 11 18 9.5 18 7C18 4.5 15.5 2 12 2Z" fill="white"/>
-              <path d="M8 15C8 15 6 17 4 16C4 16 5 18 8 18V15Z" fill="white"/>
-              <path d="M16 15C16 15 18 17 20 16C20 16 19 18 16 18V15Z" fill="white"/>
-            </svg>
-          </div>
-          <div class="logo-text"><span class="logo-brand">HVAC Rockville</span></div>
-        </a>
-        <nav class="desktop-nav">
-          <a href="/" class="nav-link">Home</a>
-          <a href="/services/" class="nav-link">Services</a>
-          <a href="/about/" class="nav-link">About</a>
-          <a href="/blog/" class="nav-link">Blog</a>
-          <a href="/" class="nav-link is-active">Glossary</a>
-          <a href="/contact/" class="nav-link">Contact</a>
-        </nav>
-        <div class="header-actions">
-          <a href="tel:2405550148" class="header-phone">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span>(240) 555-0148</span>
-          </a>
-          <button class="theme-toggle js-theme-toggle" aria-label="Toggle theme">
-            <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-            <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          </button>
-          <a href="/contact/" class="header-cta">Request HVAC Repair</a>
-          <button class="mobile-menu-btn js-mobile-menu-btn" aria-label="Toggle menu">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="mobile-menu js-mobile-menu">
-      <div class="mobile-menu-inner">
-        <a href="/" class="mobile-menu-link">Home</a>
-        <a href="/services/" class="mobile-menu-link">Services</a>
-        <a href="/about/" class="mobile-menu-link">About</a>
-        <a href="/blog/" class="mobile-menu-link">Blog</a>
-        <a href="/" class="mobile-menu-link is-active">Glossary</a>
-        <a href="/contact/" class="mobile-menu-link">Contact</a>
-        <div class="mobile-menu-footer">
-          <a href="tel:2405550148" style="color: white; display: flex; align-items: center; gap: 0.5rem;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span>(240) 555-0148</span>
-          </a>
-        </div>
-        <a href="/contact/" class="mobile-menu-cta">Request HVAC Repair</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero hero-45">
-      <div class="hero-bg">
-        <img src="/images/hero-home.png" alt="HVAC and AC Repair Glossary" loading="eager">
-        <div class="hero-overlay"></div>
-      </div>
-      <div class="hero-content">
-        <div class="container">
-          <h1 class="hero-headline">HVAC and AC Repair Glossary</h1>
-          <p class="hero-subheadline">Plain-English terms related to hvac and ac repair service, scheduling, and common home issues.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-md section-bg-light">
+  <head>
+    <SEOHead title="HVAC Repair Glossary | HVAC Rockville" description="Plain-English hvac repair terms for Rockville homeowners." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/theme.css">
+  </head>
+  <body>
+    <div class="emergency-strip">Same-Day HVAC & AC Repair in Rockville - Call Now: <a href="tel:2405550148">(240) 555-0148</a></div>
+    <header class="site-header">
       <div class="container">
-        <div class="glossary-search js-animate animate-on-scroll">
-          <svg class="glossary-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-          <input type="text" class="js-glossary-search" placeholder="Search terms..." aria-label="Search glossary terms">
+        <div class="site-header-inner">
+          <a href="/" class="logo"><div class="logo-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" fill="white"/></svg></div><div class="logo-text"><span class="logo-brand">HVAC Rockville</span></div></a>
+          <nav class="desktop-nav">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/services/" class="nav-link">Services</a>
+            <a href="/about/" class="nav-link">About</a>
+            <a href="/blog/" class="nav-link">Blog</a>
+            <a href="/glossary/" class="nav-link">Glossary</a>
+            <a href="/contact/" class="nav-link">Contact</a>
+          </nav>
+          <div class="header-actions"><a href="tel:2405550148" class="header-phone"><span>(240) 555-0148</span></a><a href="/contact/" class="header-cta">Request HVAC Repair</a></div>
         </div>
       </div>
-    </section>
-
-    <section class="section section-sm section-bg-light" style="padding-top: 0;">
-      <div class="container">
-        <nav class="alpha-nav js-animate animate-on-scroll" aria-label="Alphabetical navigation">
-          <button class="alpha-nav-btn is-active">A</button>
-          <button class="alpha-nav-btn">B</button>
-          <button class="alpha-nav-btn">C</button>
-          <button class="alpha-nav-btn">D</button>
-          <button class="alpha-nav-btn">E</button>
-          <button class="alpha-nav-btn">F</button>
-          <button class="alpha-nav-btn">G</button>
-          <button class="alpha-nav-btn">H</button>
-          <button class="alpha-nav-btn">I</button>
-          <button class="alpha-nav-btn">J</button>
-          <button class="alpha-nav-btn">K</button>
-          <button class="alpha-nav-btn">L</button>
-          <button class="alpha-nav-btn">M</button>
-          <button class="alpha-nav-btn">N</button>
-          <button class="alpha-nav-btn">O</button>
-          <button class="alpha-nav-btn">P</button>
-          <button class="alpha-nav-btn">Q</button>
-          <button class="alpha-nav-btn">R</button>
-          <button class="alpha-nav-btn">S</button>
-          <button class="alpha-nav-btn">T</button>
-          <button class="alpha-nav-btn">U</button>
-          <button class="alpha-nav-btn">V</button>
-          <button class="alpha-nav-btn">W</button>
-          <button class="alpha-nav-btn">X</button>
-          <button class="alpha-nav-btn">Y</button>
-          <button class="alpha-nav-btn">Z</button>
-        </nav>
-      </div>
-    </section>
-
-    <section class="section section-lg section-bg-light" style="padding-top: 0;">
-      <div class="container">
-        <div class="glossary-letter-section js-glossary-letter">
-          <h2 class="glossary-letter-title">E</h2>
-          <div class="glossary-terms-grid">
-            <a href="/glossary/term/" class="glossary-term-card js-glossary-card" data-term="exclusion" data-definition="humane removal method">
-              <div class="glossary-term-header">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.5 2 6 4.5 6 7C6 9.5 8 11 8 11L6 13L9 12C9 12 10 14 12 14C14 14 15 12 15 12L18 13L16 11C16 11 18 9.5 18 7C18 4.5 15.5 2 12 2Z"/><path d="M8 15C8 15 6 17 4 16C4 16 5 18 8 18V15Z"/><path d="M16 15C16 15 18 17 20 16C20 16 19 18 16 18V15Z"/></svg>
-                <span class="glossary-term-name">Exclusion</span>
-              </div>
-              <p class="glossary-term-def">The humane method of removing comfort emergencies by allowing them to exit through one-way devices while preventing re-entry. This is the industry-standard approach.</p>
-            </a>
-            <a href="/glossary/term/" class="glossary-term-card js-glossary-card" data-term="entry point" data-definition="where comfort emergencies enter">
-              <div class="glossary-term-header">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.5 2 6 4.5 6 7C6 9.5 8 11 8 11L6 13L9 12C9 12 10 14 12 14C14 14 15 12 15 12L18 13L16 11C16 11 18 9.5 18 7C18 4.5 15.5 2 12 2Z"/><path d="M8 15C8 15 6 17 4 16C4 16 5 18 8 18V15Z"/><path d="M16 15C16 15 18 17 20 16C20 16 19 18 16 18V15Z"/></svg>
-                <span class="glossary-term-name">Entry Point</span>
-              </div>
-              <p class="glossary-term-def">Any opening in a building's exterior that comfort emergencies use to access interior spaces. Common entry points include gaps, vents, and cracks.</p>
-            </a>
-          </div>
-        </div>
-        <div class="glossary-letter-section js-glossary-letter">
-          <h2 class="glossary-letter-title">G</h2>
-          <div class="glossary-terms-grid">
-            <a href="/glossary/term/" class="glossary-term-card js-glossary-card" data-term="guano" data-definition="comfort emergency droppings">
-              <div class="glossary-term-header">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.5 2 6 4.5 6 7C6 9.5 8 11 8 11L6 13L9 12C9 12 10 14 12 14C14 14 15 12 15 12L18 13L16 11C16 11 18 9.5 18 7C18 4.5 15.5 2 12 2Z"/><path d="M8 15C8 15 6 17 4 16C4 16 5 18 8 18V15Z"/><path d="M16 15C16 15 18 17 20 16C20 16 19 18 16 18V15Z"/></svg>
-                <span class="glossary-term-name">Guano</span>
-              </div>
-              <p class="glossary-term-def">Comfort Emergencies droppings, which accumulate in roosting areas. Guano should be professionally removed with proper protective equipment.</p>
-            </a>
-          </div>
-        </div>
-        <div class="glossary-letter-section js-glossary-letter">
-          <h2 class="glossary-letter-title">H</h2>
-          <div class="glossary-terms-grid">
-            <a href="/glossary/term/" class="glossary-term-card js-glossary-card" data-term="histoplasmosis" data-definition="fungal disease">
-              <div class="glossary-term-header">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.5 2 6 4.5 6 7C6 9.5 8 11 8 11L6 13L9 12C9 12 10 14 12 14C14 14 15 12 15 12L18 13L16 11C16 11 18 9.5 18 7C18 4.5 15.5 2 12 2Z"/><path d="M8 15C8 15 6 17 4 16C4 16 5 18 8 18V15Z"/><path d="M16 15C16 15 18 17 20 16C20 16 19 18 16 18V15Z"/></svg>
-                <span class="glossary-term-name">Histoplasmosis</span>
-              </div>
-              <p class="glossary-term-def">A respiratory disease caused by inhaling spores from accumulated droppings. Professional cleanup with safety equipment is essential.</p>
-            </a>
-          </div>
-        </div>
-        <div class="glossary-letter-section js-glossary-letter">
-          <h2 class="glossary-letter-title">M</h2>
-          <div class="glossary-terms-grid">
-            <a href="/glossary/term/" class="glossary-term-card js-glossary-card" data-term="maternity season" data-definition="breeding period">
-              <div class="glossary-term-header">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.5 2 6 4.5 6 7C6 9.5 8 11 8 11L6 13L9 12C9 12 10 14 12 14C14 14 15 12 15 12L18 13L16 11C16 11 18 9.5 18 7C18 4.5 15.5 2 12 2Z"/><path d="M8 15C8 15 6 17 4 16C4 16 5 18 8 18V15Z"/><path d="M16 15C16 15 18 17 20 16C20 16 19 18 16 18V15Z"/></svg>
-                <span class="glossary-term-name">Maternity Season</span>
-              </div>
-              <p class="glossary-term-def">The period when females give birth and raise their young. Removal is often prohibited during this time to protect dependent young.</p>
-            </a>
-          </div>
-        </div>
-        <div class="glossary-letter-section js-glossary-letter">
-          <h2 class="glossary-letter-title">R</h2>
-          <div class="glossary-terms-grid">
-            <a href="/glossary/term/" class="glossary-term-card js-glossary-card" data-term="roost" data-definition="resting place">
-              <div class="glossary-term-header">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.5 2 6 4.5 6 7C6 9.5 8 11 8 11L6 13L9 12C9 12 10 14 12 14C14 14 15 12 15 12L18 13L16 11C16 11 18 9.5 18 7C18 4.5 15.5 2 12 2Z"/><path d="M8 15C8 15 6 17 4 16C4 16 5 18 8 18V15Z"/><path d="M16 15C16 15 18 17 20 16C20 16 19 18 16 18V15Z"/></svg>
-                <span class="glossary-term-name">Roost</span>
-              </div>
-              <p class="glossary-term-def">Any place where comfort emergencies rest or raise their young. Roosts can be natural or man-made structures.</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-lg section-bg-dark">
-      <div class="container text-center">
-        <h2 class="section-heading text-white js-animate animate-on-scroll">Still Have Questions?</h2>
-        <p class="section-subheading js-animate animate-on-scroll" style="color: rgba(255,255,255,0.8); max-width: 36rem; margin: 0 auto 2rem;">Our specialists are ready to answer your questions and provide a free inspection.</p>
-        <div class="hero-buttons justify-center js-animate animate-on-scroll" style="justify-content: center;">
-          <a href="tel:2405550148" class="btn-primary">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Call (240) 555-0148
-          </a>
-          <a href="/contact/" class="btn-outline">Request HVAC Repair</a>
-        </div>
-      </div>
-    </section>
+    </header>
+    <main>
+    <section class="hero hero-45"><div class="hero-bg"><img src="/images/hero-home.png" alt="HVAC Repair glossary" loading="eager"><div class="hero-overlay"></div></div><div class="hero-content"><div class="container"><h1 class="hero-headline">HVAC Repair Glossary</h1><p class="hero-subheadline">Plain-English terms for Rockville homeowners comparing service options and next steps.</p></div></div></section>
+    <section class="section section-lg section-bg-light"><div class="container"><div class="glossary-terms-grid"><a href="/glossary/term/" class="glossary-term-card"><div class="glossary-term-header"><span class="glossary-term-name">Service Scope</span></div><p class="glossary-term-def">What the hvac repair visit includes, what it excludes, and what result the visit is meant to achieve.</p></a>
+<a href="/glossary/term/" class="glossary-term-card"><div class="glossary-term-header"><span class="glossary-term-name">Problem Area</span></div><p class="glossary-term-def">The room, fixture, surface, system, or visible condition where the service request starts.</p></a>
+<a href="/glossary/term/" class="glossary-term-card"><div class="glossary-term-header"><span class="glossary-term-name">Scheduling Window</span></div><p class="glossary-term-def">The appointment timing that matches urgency, access needs, and expected service length.</p></a>
+<a href="/glossary/term/" class="glossary-term-card"><div class="glossary-term-header"><span class="glossary-term-name">Safety Risk</span></div><p class="glossary-term-def">Any condition that could create damage, contamination, comfort loss, or avoidable stress if ignored.</p></a>
+<a href="/glossary/term/" class="glossary-term-card"><div class="glossary-term-header"><span class="glossary-term-name">Final Check</span></div><p class="glossary-term-def">The closing walkthrough or test that confirms the requested work is complete.</p></a>
+<a href="/glossary/term/" class="glossary-term-card"><div class="glossary-term-header"><span class="glossary-term-name">Follow-Up</span></div><p class="glossary-term-def">Any recommended next step, maintenance note, or future service reminder after the visit.</p></a></div></div></section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="/" class="logo">
-            <div class="logo-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2C8.5 2 6 4.5 6 7C6 9.5 8 11 8 11L6 13L9 12C9 12 10 14 12 14C14 14 15 12 15 12L18 13L16 11C16 11 18 9.5 18 7C18 4.5 15.5 2 12 2Z" fill="white"/>
-                <path d="M8 15C8 15 6 17 4 16C4 16 5 18 8 18V15Z" fill="white"/>
-                <path d="M16 15C16 15 18 17 20 16C20 16 19 18 16 18V15Z" fill="white"/>
-              </svg>
-            </div>
-            <div class="logo-text"><span class="logo-brand">HVAC Rockville</span></div>
-          </a>
-          <p>HVAC and AC Repair specialists serving Rockville homes with clear communication and practical service options since 2014.</p>
-          <div class="footer-contact">
-            <a href="tel:2405550148"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>(240) 555-0148</span></a>
-            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>199 E Montgomery Ave, Rockville, MD 20850</span></div>
-          </div>
-        </div>
-        <div class="footer-column">
-          <h3>Services</h3>
-          <ul>
-            <li><a href="/services/">AC Repair</a></li>
-            <li><a href="/services/">Furnace Repair</a></li>
-            <li><a href="/services/">Heat Pump Service</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Company</h3>
-          <ul>
-            <li><a href="/about/">About</a></li>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/">Glossary</a></li>
-            <li><a href="/contact/">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-areas">
-          <h3>Service Areas</h3>
-          <div class="footer-area-tags">
-            <span class="footer-area-tag">Rockville</span>
-            <span class="footer-area-tag">North Bethesda</span>
-            <span class="footer-area-tag">Potomac</span>
-            <span class="footer-area-tag">Gaithersburg</span>
-          </div>
-        </div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom"><div class="footer-legal">2026 HVAC Rockville. All rights reserved.</div></div>
       </div>
-      <div class="footer-bottom">
-        <div class="footer-legal">2026 HVAC Rockville. All rights reserved. Licensed & insured where required.</div>
-        <div class="footer-social">
-          <a href="https://facebook.com/hvacrockville" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-          <a href="https://twitter.com/hvacrockville" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <a href="tel:2405550148" class="fab" aria-label="Call now">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-  </a>
-
-  <div class="cookie-banner js-cookie-banner hidden">
-    <div class="cookie-banner-inner">
-      <p>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</p>
-      <button class="cookie-banner-close js-cookie-close" aria-label="Close">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
-    </div>
-    <button class="cookie-banner-btn js-cookie-accept">Got it</button>
-  </div>
-
-  <script is:inline src="/js/main.js"></script>
-</body>
+    </footer>
+    <script is:inline src="/js/main.js"></script>
+  </body>
 </html>

@@ -1,6 +1,6 @@
 /**
  * ════════════════════════════════════════════
- * CINEMATIC HOME SERVICES THEME — SHARED JS
+ * CINEMATIC HOME SERVICES THEME - SHARED JS
  * All pages use this single file for interactivity
  * ════════════════════════════════════════════
  */
