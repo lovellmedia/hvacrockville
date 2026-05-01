@@ -3451,3 +3451,23 @@ ul, ol {
 .fab {
   z-index: 70;
 }
+
+.mobile-menu-proxy {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .mobile-menu-proxy {
+    display: flex !important;
+    position: fixed !important;
+    top: 48px;
+    left: 330px;
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 389px) {
+  .mobile-menu-proxy {
+    left: calc(100vw - 60px);
+  }
+}

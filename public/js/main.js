@@ -640,5 +640,19 @@
       btn.focus();
     }
   });
+  if (!document.querySelector('.js-mobile-menu-proxy')) {
+    const proxy = btn.cloneNode(true);
+    proxy.classList.add('mobile-menu-proxy', 'js-mobile-menu-proxy');
+    proxy.setAttribute('aria-label', 'Toggle menu');
+    proxy.setAttribute('aria-controls', menu.id);
+    proxy.setAttribute('aria-expanded', btn.getAttribute('aria-expanded') || 'false');
+    proxy.addEventListener('click', function() {
+      btn.click();
+      proxy.setAttribute('aria-expanded', menu.classList.contains('is-open') ? 'true' : 'false');
+    });
+    btn.addEventListener('click', function() {
+      proxy.setAttribute('aria-expanded', menu.classList.contains('is-open') ? 'true' : 'false');
+    });
+    document.body.appendChild(proxy);
+  }
 })();
-
