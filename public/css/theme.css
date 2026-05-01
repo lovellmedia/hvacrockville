@@ -3242,11 +3242,21 @@ ul, ol {
     padding: 0.45rem 0.75rem;
     font-size: 0.78rem;
     line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+
+  .emergency-strip .inline-flex {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
   }
 
   .site-header-inner {
+    position: relative;
     height: 64px;
     gap: 0.5rem;
+    padding-right: 52px;
   }
 
   .logo {
@@ -3269,8 +3279,21 @@ ul, ol {
     display: none;
   }
 
+  .header-actions {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-left: 0;
+  }
+
+  .header-phone,
+  .header-cta {
+    display: none !important;
+  }
+
   .mobile-menu-btn {
-    display: flex;
+    display: flex !important;
   }
 
   .hero,
