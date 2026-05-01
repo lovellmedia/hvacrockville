@@ -1,0 +1,23 @@
+[
+  {
+    "file": "/images/hero-home.png",
+    "section": "Homepage hero",
+    "source": "Generated local PNG asset",
+    "nicheFit": "Visual system drawn specifically for HVAC and AC Repair in Rockville.",
+    "notes": "Unique generated file for this site."
+  },
+  {
+    "file": "/images/home-process.png",
+    "section": "Homepage process/context",
+    "source": "Generated local PNG asset",
+    "nicheFit": "Supports the HVAC and AC Repair service process section.",
+    "notes": "Unique generated file for this site."
+  },
+  {
+    "file": "/images/home-result.png",
+    "section": "Homepage result/outcome",
+    "source": "Generated local PNG asset",
+    "nicheFit": "Supports the HVAC and AC Repair result and conversion message.",
+    "notes": "Unique generated file for this site."
+  }
+]

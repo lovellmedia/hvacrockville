@@ -1,0 +1,319 @@
+---
+import SEOHead from '../components/SEOHead.astro';
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <SEOHead title="Contact — HVAC Rockville" description="Rockville HVAC and AC repair for no-cooling calls, furnace problems, heat pump issues, weak airflow, and urgent comfort system failures." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/theme.css">
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme-preference');
+      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="emergency-strip">
+    <span class="inline-flex items-center gap-2">
+      <span class="relative flex h-2 w-2"><span class="ping-dot"></span></span>
+      Same-Day HVAC & AC Repair in Rockville - Call Now: <a href="tel:2405550148">(240) 555-0148</a>
+    </span>
+  </div>
+
+  <header class="site-header is-transparent js-site-header">
+    <div class="container">
+      <div class="site-header-inner">
+        <a href="/" class="logo">
+          <div class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C8.5 2 6 4.5 6 7C6 9.5 8 11 8 11L6 13L9 12C9 12 10 14 12 14C14 14 15 12 15 12L18 13L16 11C16 11 18 9.5 18 7C18 4.5 15.5 2 12 2Z" fill="white"/>
+              <path d="M8 15C8 15 6 17 4 16C4 16 5 18 8 18V15Z" fill="white"/>
+              <path d="M16 15C16 15 18 17 20 16C20 16 19 18 16 18V15Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="logo-text"><span class="logo-brand">HVAC Rockville</span></div>
+        </a>
+        <nav class="desktop-nav">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/services/" class="nav-link">Services</a>
+          <a href="/about/" class="nav-link">About</a>
+          <a href="/blog/" class="nav-link">Blog</a>
+          <a href="/glossary/" class="nav-link">Glossary</a>
+          <a href="/contact/" class="nav-link is-active">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <a href="tel:2405550148" class="header-phone">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>(240) 555-0148</span>
+          </a>
+          <button class="theme-toggle js-theme-toggle" aria-label="Toggle theme">
+            <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <a href="/contact/" class="header-cta">Request HVAC Repair</a>
+          <button class="mobile-menu-btn js-mobile-menu-btn" aria-label="Toggle menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu js-mobile-menu">
+      <div class="mobile-menu-inner">
+        <a href="/" class="mobile-menu-link">Home</a>
+        <a href="/services/" class="mobile-menu-link">Services</a>
+        <a href="/about/" class="mobile-menu-link">About</a>
+        <a href="/blog/" class="mobile-menu-link">Blog</a>
+        <a href="/glossary/" class="mobile-menu-link">Glossary</a>
+        <a href="/contact/" class="mobile-menu-link is-active">Contact</a>
+        <div class="mobile-menu-footer">
+          <a href="tel:2405550148" style="color: white; display: flex; align-items: center; gap: 0.5rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>(240) 555-0148</span>
+          </a>
+        </div>
+        <a href="/contact/" class="mobile-menu-cta">Request HVAC Repair</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-45">
+      <div class="hero-bg">
+        <img src="/images/hero-contact.png" alt="HVAC Rockville contact" loading="eager">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" class="breadcrumb-link" itemprop="item"><span itemprop="name">Home</span></a>
+                <meta itemprop="position" content="1">
+              </li>
+              <li class="breadcrumb-separator">/</li>
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span class="breadcrumb-current" itemprop="name">Contact</span>
+                <meta itemprop="position" content="2">
+              </li>
+            </ol>
+          </nav>
+          <h1 class="hero-headline">Contact HVAC Rockville</h1>
+          <p class="hero-subheadline">Ready to get started? Reach out today for a free inspection and quote. We are here to help with all your HVAC Repair needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-lg section-bg-light">
+      <div class="container">
+        <div class="sidebar-layout">
+          <div>
+            <div class="lead-form js-animate animate-on-scroll">
+              <h3 class="lead-form-heading">Request HVAC and AC Repair Service</h3>
+              <p class="lead-form-subheading">Send the basics and get a clear next step for your Rockville service request.</p>
+              <form class="js-lead-form" novalidate>
+                <div class="form-grid">
+                  <div class="form-field">
+                    <label>Full Name <span class="required">*</span></label>
+                    <input type="text" placeholder="John Smith" data-required data-label="Full name">
+                  </div>
+                  <div class="form-field">
+                    <label>Phone <span class="required">*</span></label>
+                    <input type="tel" placeholder="(555) 000-0000" data-required data-label="Phone">
+                  </div>
+                  <div class="form-field">
+                    <label>Email</label>
+                    <input type="email" placeholder="john@email.com">
+                  </div>
+                  <div class="form-field">
+                    <label>City <span class="required">*</span></label>
+                    <input type="text" placeholder="Your city" data-required data-label="City">
+                  </div>
+                  <div class="form-field">
+                    <label>Service Needed</label>
+                    <select>
+                      <option>AC Repair</option>
+                      <option>Furnace Repair</option>
+                      <option>Heat Pump Service</option>
+                      <option>Emergency HVAC</option>
+                      <option>Airflow Diagnostics</option>
+                      <option>Thermostat & Controls</option>
+                    </select>
+                  </div>
+                  <div class="form-field" style="grid-column: 1 / -1;">
+                    <label>Message</label>
+                    <textarea rows="4" placeholder="Tell us about your situation..."></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="form-submit js-form-submit" style="margin-top: 1rem;">Request HVAC Repair</button>
+                <p class="form-trust-note">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  Clear scope. Local service. No pressure.
+                </p>
+                <div class="form-success hidden js-form-success">
+                  <div class="form-success-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  </div>
+                  <h3>Thank You!</h3>
+                  <p>We've received your request and will contact you within 30 minutes.</p>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="contact-card js-animate animate-on-scroll">
+              <h3 class="contact-card-title">Contact Information</h3>
+              <div class="contact-card-item">
+                <div class="contact-card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="contact-card-content">
+                  <h4>Phone</h4>
+                  <p><a href="tel:2405550148">(240) 555-0148</a></p>
+                </div>
+              </div>
+              <div class="contact-card-item">
+                <div class="contact-card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact-card-content">
+                  <h4>Email</h4>
+                  <p><a href="mailto:service@hvacrockville.com">service@hvacrockville.com</a></p>
+                </div>
+              </div>
+              <div class="contact-card-item">
+                <div class="contact-card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact-card-content">
+                  <h4>Address</h4>
+                  <p>199 E Montgomery Ave<br>Rockville, MD 20850</p>
+                </div>
+              </div>
+              <div class="contact-card-item">
+                <div class="contact-card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="contact-card-content">
+                  <h4>Hours</h4>
+                  <p>Open 24/7 for urgent calls</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="emergency-card js-animate animate-on-scroll">
+              <h3 class="emergency-card-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                24/7 Emergency Service
+              </h3>
+              <p class="emergency-card-desc">comfort emergencies in your living space? We offer around-the-clock emergency response.</p>
+              <a href="tel:2405550148" class="emergency-card-phone">(240) 555-0148</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-lg section-bg-light">
+      <div class="container">
+        <div class="map-container js-animate animate-on-scroll">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220448.6842826698!2d-97.893486!3d30.307982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="HVAC Rockville location"></iframe>
+        </div>
+        <div class="service-area-tags justify-center">
+          <span class="service-area-tag">Rockville</span>
+          <span class="service-area-tag">North Bethesda</span>
+          <span class="service-area-tag">Potomac</span>
+          <span class="service-area-tag">Gaithersburg</span>
+          <span class="service-area-tag">Bethesda</span>
+          <span class="service-area-tag">Kensington</span>
+          <span class="service-area-tag">Derwood</span>
+          <span class="service-area-tag">Aspen Hill</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <div class="logo-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.5 2 6 4.5 6 7C6 9.5 8 11 8 11L6 13L9 12C9 12 10 14 12 14C14 14 15 12 15 12L18 13L16 11C16 11 18 9.5 18 7C18 4.5 15.5 2 12 2Z" fill="white"/>
+                <path d="M8 15C8 15 6 17 4 16C4 16 5 18 8 18V15Z" fill="white"/>
+                <path d="M16 15C16 15 18 17 20 16C20 16 19 18 16 18V15Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="logo-text"><span class="logo-brand">HVAC Rockville</span></div>
+          </a>
+          <p>HVAC and AC Repair specialists serving Rockville homes with clear communication and practical service options since 2014.</p>
+          <div class="footer-contact">
+            <a href="tel:2405550148"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>(240) 555-0148</span></a>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>199 E Montgomery Ave, Rockville, MD 20850</span></div>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="/services/">AC Repair</a></li>
+            <li><a href="/services/">Furnace Repair</a></li>
+            <li><a href="/services/">Heat Pump Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/glossary/">Glossary</a></li>
+          </ul>
+        </div>
+        <div class="footer-areas">
+          <h3>Service Areas</h3>
+          <div class="footer-area-tags">
+            <span class="footer-area-tag">Rockville</span>
+            <span class="footer-area-tag">North Bethesda</span>
+            <span class="footer-area-tag">Potomac</span>
+            <span class="footer-area-tag">Gaithersburg</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-legal">2026 HVAC Rockville. All rights reserved. Licensed & insured where required.</div>
+        <div class="footer-social">
+          <a href="https://facebook.com/hvacrockville" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://twitter.com/hvacrockville" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="tel:2405550148" class="fab" aria-label="Call now">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+
+  <div class="cookie-banner js-cookie-banner hidden">
+    <div class="cookie-banner-inner">
+      <p>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</p>
+      <button class="cookie-banner-close js-cookie-close" aria-label="Close">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <button class="cookie-banner-btn js-cookie-accept">Got it</button>
+  </div>
+
+  <script is:inline src="/js/main.js"></script>
+</body>
+</html>

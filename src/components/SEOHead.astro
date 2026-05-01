@@ -1,0 +1,40 @@
+---
+const { title = 'HVAC Rockville', description = 'Rockville HVAC and AC repair for no-cooling calls, furnace problems, heat pump issues, weak airflow, and urgent comfort system failures.', image = '/images/hero-home.png' } = Astro.props;
+const siteUrl = 'https://hvacrockville.com';
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl);
+const imageUrl = new URL(image, siteUrl);
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'HVAC Rockville',
+  url: siteUrl,
+  image: imageUrl.href,
+  description,
+  telephone: '(240) 555-0148',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '199 E Montgomery Ave',
+    addressLocality: 'Rockville',
+    addressRegion: 'MD',
+    postalCode: '20850',
+    addressCountry: 'US'
+  },
+  areaServed: 'Rockville, Maryland',
+  priceRange: '$$'
+};
+---
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalUrl.href} />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={imageUrl.href} />
+<meta property="og:url" content={canonicalUrl.href} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl.href} />
+<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+<link rel="icon" href="/favicon.svg" />
+<script type="application/ld+json" set:html={JSON.stringify(schema)}></script>

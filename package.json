@@ -1,0 +1,16 @@
+{
+  "name": "hvacrockville-com",
+  "version": "1.0.0",
+  "description": "Rockville HVAC and AC repair for no-cooling calls, furnace problems, heat pump issues, weak airflow, and urgent comfort system failures.",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.16.18"
+  },
+  "devDependencies": {}
+}
