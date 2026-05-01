@@ -3214,6 +3214,16 @@ ul, ol {
   display: block;
 }
 
+@media (max-width: 1023px) {
+  .mobile-menu-btn {
+    display: flex !important;
+    position: fixed;
+    top: 48px;
+    right: 16px;
+    z-index: 90;
+  }
+}
+
 @media (max-width: 1180px) and (min-width: 1024px) {
   .desktop-nav {
     gap: 0;
