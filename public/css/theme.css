@@ -3166,10 +3166,12 @@ ul, ol {
 
 .site-header-inner {
   gap: 1rem;
+  min-width: 0;
 }
 
 .logo {
   min-width: 0;
+  max-width: calc(100% - 58px);
 }
 
 .logo-brand {
@@ -3189,6 +3191,11 @@ ul, ol {
 .theme-toggle,
 .mobile-menu-btn {
   min-width: 44px;
+}
+
+.header-actions {
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 .mobile-menu-btn {
@@ -3226,13 +3233,77 @@ ul, ol {
 }
 
 @media (max-width: 520px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .emergency-strip {
+    padding: 0.45rem 0.75rem;
+    font-size: 0.78rem;
+    line-height: 1.25;
+  }
+
+  .site-header-inner {
+    height: 64px;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    gap: 0.4rem;
+    max-width: calc(100vw - 92px);
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+
   .logo-brand {
-    max-width: 11.5rem;
-    font-size: 1rem;
+    max-width: 8.6rem;
+    font-size: 0.95rem;
+    line-height: 1;
   }
 
   .theme-toggle {
     display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .hero,
+  .hero-full {
+    min-height: 680px;
+  }
+
+  .hero-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-headline {
+    font-size: clamp(3rem, 14vw, 4.25rem);
+    line-height: 0.95;
+    max-width: 100%;
+  }
+
+  .hero-subheadline {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
   }
 }
 
