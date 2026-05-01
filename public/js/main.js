@@ -621,3 +621,24 @@
     init();
   }
 })();
+
+/* Rockville audit fixes: mobile menu accessibility */
+(function() {
+  const btn = document.querySelector('.js-mobile-menu-btn');
+  const menu = document.querySelector('.js-mobile-menu');
+  if (!btn || !menu) return;
+  if (!menu.id) menu.id = 'mobile-menu';
+  btn.setAttribute('aria-controls', menu.id);
+  btn.setAttribute('aria-expanded', menu.classList.contains('is-open') ? 'true' : 'false');
+  btn.addEventListener('click', function() {
+    btn.setAttribute('aria-expanded', menu.classList.contains('is-open') ? 'true' : 'false');
+  });
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && menu.classList.contains('is-open')) {
+      menu.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.focus();
+    }
+  });
+})();
+

@@ -1,23 +1,86 @@
 [
   {
     "file": "/images/hero-home.png",
-    "section": "Homepage hero",
+    "section": "hero home",
     "source": "Generated local PNG asset",
-    "nicheFit": "Visual system drawn specifically for HVAC and AC Repair in Rockville.",
-    "notes": "Unique generated file for this site."
+    "nicheFit": "Unique hvac scene generated for hvacrockville.",
+    "notes": "Individual single-scene image, not a collage."
+  },
+  {
+    "file": "/images/hero-about.png",
+    "section": "hero about",
+    "source": "Generated local PNG asset",
+    "nicheFit": "Unique hvac scene generated for hvacrockville.",
+    "notes": "Individual single-scene image, not a collage."
+  },
+  {
+    "file": "/images/hero-contact.png",
+    "section": "hero contact",
+    "source": "Generated local PNG asset",
+    "nicheFit": "Unique hvac scene generated for hvacrockville.",
+    "notes": "Individual single-scene image, not a collage."
+  },
+  {
+    "file": "/images/hero-seo.png",
+    "section": "hero seo",
+    "source": "Generated local PNG asset",
+    "nicheFit": "Unique hvac scene generated for hvacrockville.",
+    "notes": "Individual single-scene image, not a collage."
   },
   {
     "file": "/images/home-process.png",
-    "section": "Homepage process/context",
+    "section": "home process",
     "source": "Generated local PNG asset",
-    "nicheFit": "Supports the HVAC and AC Repair service process section.",
-    "notes": "Unique generated file for this site."
+    "nicheFit": "Unique hvac scene generated for hvacrockville.",
+    "notes": "Individual single-scene image, not a collage."
   },
   {
     "file": "/images/home-result.png",
-    "section": "Homepage result/outcome",
+    "section": "home result",
     "source": "Generated local PNG asset",
-    "nicheFit": "Supports the HVAC and AC Repair result and conversion message.",
-    "notes": "Unique generated file for this site."
+    "nicheFit": "Unique hvac scene generated for hvacrockville.",
+    "notes": "Individual single-scene image, not a collage."
+  },
+  {
+    "file": "/images/service-ac-repair.png",
+    "section": "service ac repair",
+    "source": "Generated local PNG asset",
+    "nicheFit": "Unique hvac scene generated for hvacrockville.",
+    "notes": "Individual single-scene image, not a collage."
+  },
+  {
+    "file": "/images/service-furnace-repair.png",
+    "section": "service furnace repair",
+    "source": "Generated local PNG asset",
+    "nicheFit": "Unique hvac scene generated for hvacrockville.",
+    "notes": "Individual single-scene image, not a collage."
+  },
+  {
+    "file": "/images/service-heat-pump.png",
+    "section": "service heat pump",
+    "source": "Generated local PNG asset",
+    "nicheFit": "Unique hvac scene generated for hvacrockville.",
+    "notes": "Individual single-scene image, not a collage."
+  },
+  {
+    "file": "/images/service-emergency.png",
+    "section": "service emergency",
+    "source": "Generated local PNG asset",
+    "nicheFit": "Unique hvac scene generated for hvacrockville.",
+    "notes": "Individual single-scene image, not a collage."
+  },
+  {
+    "file": "/images/service-airflow.png",
+    "section": "service airflow",
+    "source": "Generated local PNG asset",
+    "nicheFit": "Unique hvac scene generated for hvacrockville.",
+    "notes": "Individual single-scene image, not a collage."
+  },
+  {
+    "file": "/images/service-thermostat.png",
+    "section": "service thermostat",
+    "source": "Generated local PNG asset",
+    "nicheFit": "Unique hvac scene generated for hvacrockville.",
+    "notes": "Individual single-scene image, not a collage."
   }
 ]
