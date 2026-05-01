@@ -3219,7 +3219,8 @@ ul, ol {
     display: flex !important;
     position: fixed;
     top: 48px;
-    right: 16px;
+    right: auto;
+    left: min(calc(100vw - 60px), 330px);
     z-index: 90;
   }
 }
@@ -3306,7 +3307,8 @@ ul, ol {
     display: flex !important;
     position: fixed;
     top: 48px;
-    right: 16px;
+    right: auto;
+    left: min(calc(100vw - 60px), 330px);
     z-index: 90;
   }
 
@@ -3443,4 +3445,3 @@ ul, ol {
 .fab {
   z-index: 70;
 }
-
